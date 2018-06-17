@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Tic Tac Toe</title>
+	<link rel="stylesheet" href="style.css">
+	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<button id="win_counter" class="btn btn-info">Win counter : 0</button>
+		</div>
+		<br>
+		<div class="row">
+			<a id = "cell_1" class="cell" onclick="click_cell(1);">1</a>
+			<a id = "cell_2" class="cell" onclick="click_cell(2);">2</a>
+			<a id = "cell_3" class="cell" onclick="click_cell(3);">3</a>
+		</div>
+		<div class="row">
+			<a id = "cell_4" class="cell" onclick="click_cell(4);">4</a>
+			<a id = "cell_5" class="cell" onclick="click_cell(5);">5</a>
+			<a id = "cell_6" class="cell" onclick="click_cell(6);">6</a>
+		</div>
+		<div class="row">
+			<a id = "cell_7" class="cell" onclick="click_cell(7);">7</a>
+			<a id = "cell_8" class="cell" onclick="click_cell(8);">8</a>
+			<a id = "cell_9" class="cell" onclick="click_cell(9);">9</a>
+		</div>
+		<hr>
+		<div class="row">
+			<button class="btn btn-success" onclick="show_sequence();">Show Sequence</button>
+			<button class="btn btn-success" onclick="reset();">Reset</button>			
+			<button class="btn btn-success" onclick="check_win();">Check Win</button>			
+		</div>
+		<br>
+		<div class="row">
+			<button id="sequence" class="btn btn-info">0,0,0,0,0,0,0,0,0</button>
+			<button id="left_move" class="btn btn-danger">9</button>
+			<button id="player_taken" class="btn btn-danger">0,0,0,0,0,0,0,0,0</button>
+			<button id="ai_taken" class="btn btn-danger">0,0,0,0,0,0,0,0,0</button>
+		</div>
+		<br>
+		<div id = "move_record" class="row">
+		</div>
+	</div>
+	<script src="underscore-min.js"></script>
+	<script src="core.js"></script>
+</body>
+</html>
